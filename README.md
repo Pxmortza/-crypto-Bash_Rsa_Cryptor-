@@ -13,7 +13,7 @@ Usage: crypto [OPTION] -i INPUT -o OUTPUT
 -d	decrypt
 -i	input
 -o	output
--s	create shasum
+-s	create rsasum
 -t  tarmode
 -h	help message
 ```
