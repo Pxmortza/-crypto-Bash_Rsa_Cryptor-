@@ -2,7 +2,7 @@
 ## Warning This source code is designed and built for educational purposes only. Please do not use it in a bad way!
 
 ## editor and creator mortza
-##contact to me Only in discord (mortza#3700)
+contact to me Only in discord (mortza#3700)
 
 
 ## Options
@@ -46,4 +46,4 @@ openssl req -x509 -newkey rsa:4096 -keyout privatekey.pem -out publickey.pem
 # decrypt with private key:
 ./crypto -d -p private.pem -i ultrasecret.dat -o plain.txt
 ```
-thank you _acidwars_
+Thank you _acidwars_
