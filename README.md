@@ -2,12 +2,12 @@
 ## Warning This source code is designed and built for educational purposes only. Please do not use it in a bad way!
 
 ## editor and creator mortza
-##contact to me inly in discord (mortza#3700)
+##contact to me Only in discord (mortza#3700)
 
 
 ## Options
 ```bash
-Usage: bashcrypt [OPTION] -i INPUT -o OUTPUT
+Usage: crypto [OPTION] -i INPUT -o OUTPUT
 -p	use public/privatekey for encryption/decryption
 -e	encrypt
 -d	decrypt
@@ -30,20 +30,20 @@ openssl req -x509 -newkey rsa:4096 -keyout privatekey.pem -out publickey.pem
 ### Encrypt
 ```bash
 # encrypt with a password:
-./bashcrypto -e -i test.txt -o test.txt.enc
+./crypto -e -i test.txt -o test.txt.enc
 # encrypt all files in a folder
-./bashcrypto -e -i dir -o enc
+./crypto -e -i dir -o enc
 # encrypt with your public key:
-./bashcrypto -e -p public.pem -i test.txt -o ultrasecret.dat
+./crypto -e -p public.pem -i test.txt -o ultrasecret.dat
 # encrypt all files in a folder
-./bashcrypto -e -p public.pem -i dir -o ultrasecret.dat
+./crypto -e -p public.pem -i dir -o ultrasecret.dat
 ```
 
 ### Decrypt
 ```bash
 # decrypt with password:
-./bashcrypto -d -i test.txt.enc -o plain.txt
+./crypto -d -i test.txt.enc -o plain.txt
 # decrypt with private key:
-./bashcrypto -d -p private.pem -i ultrasecret.dat -o plain.txt
+./crypto -d -p private.pem -i ultrasecret.dat -o plain.txt
 ```
 thank you _acidwars_
