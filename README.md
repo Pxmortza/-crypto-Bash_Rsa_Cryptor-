@@ -1,1 +1,49 @@
-# -crypto-Bash_Rsa_Cryptor-
+#  crypto Bash Rsa Cryptor
+## Warning This source code is designed and built for educational purposes only. Please do not use it in a bad way!
+
+## editor and creator mortza
+##contact to me inly in discord (mortza#3700)
+
+
+## Options
+```bash
+Usage: bashcrypt [OPTION] -i INPUT -o OUTPUT
+-p	use public/privatekey for encryption/decryption
+-e	encrypt
+-d	decrypt
+-i	input
+-o	output
+-s	create shasum
+-t  tarmode
+-h	help message
+```
+Encrypt by generating a private or public key.
+
+### Create public/private key
+```bash
+# Create public/private key
+openssl req -x509 -nodes -newkey rsa:4096 -keyout privatekey.pem -out publickey.pem
+# Create public/private key with password protection
+openssl req -x509 -newkey rsa:4096 -keyout privatekey.pem -out publickey.pem
+```
+
+### Encrypt
+```bash
+# encrypt with a password:
+./bashcrypto -e -i test.txt -o test.txt.enc
+# encrypt all files in a folder
+./bashcrypto -e -i dir -o enc
+# encrypt with your public key:
+./bashcrypto -e -p public.pem -i test.txt -o ultrasecret.dat
+# encrypt all files in a folder
+./bashcrypto -e -p public.pem -i dir -o ultrasecret.dat
+```
+
+### Decrypt
+```bash
+# decrypt with password:
+./bashcrypto -d -i test.txt.enc -o plain.txt
+# decrypt with private key:
+./bashcrypto -d -p private.pem -i ultrasecret.dat -o plain.txt
+```
+thank you _acidwars_
