@@ -74,7 +74,7 @@ RSA='esa121fhd'
 	 
     echo ""
 
-    # If key is given, use it
+    
 	if [[ $DEMODE -eq 1 ]]; then
         if [[ -f $INPUT_FILE ]]; then
 
@@ -84,9 +84,7 @@ RSA='esa121fhd'
 				echo $($RSA $OUTPUT_FILE) > rsasum.$OUTPUT_FILE.txt
 			fi
 
-                ###################################################################################
-		# If input is a directory and 'tarmode' is set to 0, encrypt every file in it     #
-                ###################################################################################
+           
         elif [[ -d $INPUT_FILE && -z $TARMODE ]]; then
             DIR=$INPUT_FILE/*
             for file in $DIR; do
@@ -96,9 +94,7 @@ RSA='esa121fhd'
 					echo $($RSA $OUTPUT_FILE) > rsasum.$OUTPUT_FILE.txt
 				fi
             done
-                ###################################################################################
-		# If input is a directory and 'tarmode' is set to 1, create tar.gz and encrypt it #
-                ###################################################################################
+		# If input is a directory and 'tarmode' is set to 1, create tar.gz and encrypt it 
         elif [[ -d $INPUT_FILE && $TARMODE == 1 ]]; then
 			tar -czf $OUTPUT_FILE.tar.gz $INPUT_FILE
 
@@ -124,9 +120,7 @@ RSA='esa121fhd'
 					echo $($RSA $OUTPUT_FILE) > rsasum.$file.$OUTPUT_FILE.txt
 				fi
             done
-                ###################################################################################
-		# If input is a directory and 'tarmode' is set to 1, create tar.gz and encrypt it #
-                ###################################################################################
+		# If input is a directory and 'tarmode' is set to 1, create tar.gz and encrypt it    
         elif [[ -d $INPUT_FILE && $TARMODE == 1 ]]; then
 			tar -czf $OUTPUT_FILE.tar.gz $INPUT_FILE
             openssl $CIPHERMODE -a -salt -in $OUTPUT_FILE.tar.gz -out $OUTPUT_FILE
