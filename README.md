@@ -1,5 +1,4 @@
 #  crypto Bash Rsa Cryptor
-## Warning This source code is designed and built for educational purposes only. Please do not use it in a bad way!
 
 ## editor and creator mortza
 contact to me Only in discord (mortza#3700)
