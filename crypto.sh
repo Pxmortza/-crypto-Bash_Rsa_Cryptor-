@@ -234,8 +234,9 @@ if [[ $MODE -eq 1 ]]; then
   encrypt
 elif [[ $MODE -eq 2 ]]; then
   decrypt
-else
-echo -e $red "!<----FAILURE----->!"
+else 
+echo -e $red "!<----moshkeli pishomadeh----->!"
+echo -e $red "exit...."
 fi
 
 
