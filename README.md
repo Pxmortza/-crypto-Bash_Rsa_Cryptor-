@@ -3,8 +3,7 @@
 
 ## editor and creator mortza
 contact to me Only in discord (mortza#3700)
-Join To blackGuard For other Tool!
-
+For GuardIran...
 
 ## Options
 ```bash
