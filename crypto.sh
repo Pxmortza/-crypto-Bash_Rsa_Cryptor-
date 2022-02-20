@@ -5,9 +5,7 @@
 #Contact to me only in discord( mortza#3700 )
 #cryptor File only for _|_-Tutorial-_|_
 
-##################
-#For Only GuardIran
-##################
+
 
 green='\e[0;34m'   
 red='\e[1;31m'
@@ -40,16 +38,18 @@ RSA='esa121fhd'
 {
         clear
         echo -e $green
+		echo "----------------------------------------------------"
+        echo "             _-|-_              "
         echo " ____  ____    _    ____  _   _ "
         echo "|  _ \/ ___|  / \  / ___|| | | |"
         echo "| |_) \___ \ / _ \ \___ \| |_| |"
         echo "|  _ < ___) / ___ \ ___) |  _  |"
         echo "|_| \_\____/_/   \_\____/|_| |_|"
-        echo  "     Created For Guardiran     "
-        echo  ""
+        echo "         Creator mortza         "
+        echo "             _-|-_              "
         echo "----------------------------------------------------"
 	echo "baraye estefadeh: ./crypto [OPTION] -i vorody -o khoroji"
-        echo "-------------"
+    echo "-------------"
 	echo "-p   use public/privatekey for encryption/decryption"
 	echo  "-e    encrypt"
 	echo   "-d    decrypt"
@@ -58,7 +58,7 @@ RSA='esa121fhd'
 	echo      "-s	 create shasum"
 	echo       "-t	  directory will be archived"
 	echo        "-h	    help message"
-        echo        "-------------"
+        echo     "-------------"
 	echo "------------------------------------------------------"
     echo ""
 }
@@ -234,9 +234,9 @@ if [[ $MODE -eq 1 ]]; then
   encrypt
 elif [[ $MODE -eq 2 ]]; then
   decrypt
-else 
-echo -e $red "!<----moshkeli pishomadeh----->!"
-echo -e $red "exit...."
+else
+echo -e $red "!<----FAILURE----->!"
 fi
+
 
 
