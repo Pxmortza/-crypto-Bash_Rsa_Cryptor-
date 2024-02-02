@@ -18,8 +18,8 @@ For GuardIran...
 	 -p   use public/privatekey for encryption/decryption
 	   -e    encrypt
 	    -d    decrypt
-	     -i    input(vorody)
-	      -o	output(khoroji)
+	     -i    input
+	      -o	output
 	       -s	 create shasum
 	        -t	  directory will be archived
 	         -h	    help message
